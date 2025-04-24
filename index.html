@@ -3,24 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Artist Portfolio - Showcasing creative works and projects">
+    <title>Artist Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS for critical styles -->
+    <style>
+        /* Critical CSS for faster initial loading */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .section {
+            min-height: 100vh;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your actual GA4 tracking ID
+    </script>
 </head>
 <body>
-     <style>
-    
-      font-family: 'Sigmar', cursive;
-    }
-  </style>
-</head>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Artist Name</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-<body>
-  <div class="everything">
-    <div class="headers">
-      <h1 class="name" style="color:#1bb0fa;">
-        liv tull
-      </h1>
-    </div>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <h1>Creative Visions</h1>
+            <h3>Welcome to my artistic journey</h3>
+            <p>Exploring the boundaries of <strong>imagination</strong> and <em>reality</em> through visual art</p>
+            <a href="#gallery" class="btn">View My Work</a>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h4>My Story</h4>
+                    <p>I am a passionate artist with over 5 years of experience in various mediums. My work explores themes of <u>nature</u>, <strong>human emotion</strong>, and the <em>abstract connections</em> between them.</p>
+                    
+                    <h5>My Approach</h5>
+                    <p>Every piece I create is a reflection of both technical skill and emotional expression. I believe art should both challenge and comfort the viewer.</p>
+                    
+                    <h6>Education & Training</h6>
+                    <ul>
+                        <li>Bachelor of Fine Arts, Visual Arts Academy, 2018</li>
+                        <li>Master's in Contemporary Art, Creative Institute, 2020</li>
+                        <li>Specialized Workshop in Mixed Media, International Art Center</li>
+                    </ul>
+                </div>
+                <figure class="about-image">
+                    <img src="https://via.placeholder.com/400x500" alt="Artist portrait in studio" width="400" height="500">
+                    <figcaption>In my studio, creating new works (2023)</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>A collection of my recent works showcasing various techniques and themes.</p>
+            
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Abstract painting with blue tones" width="400" height="300">
+                    <figcaption>"Ocean Dreams" - Acrylic on Canvas</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Portrait painting of elderly woman" width="400" height="300">
+                    <figcaption>"Wisdom" - Oil on Canvas</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Landscape painting of mountains at sunset" width="400" height="300">
+                    <figcaption>"Mountain Sunset" - Watercolor</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Mixed media sculpture of human form" width="400" height="300">
+                    <figcaption>"Emergence" - Mixed Media</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Digital art of futuristic cityscape" width="400" height="300">
+                    <figcaption>"Future City" - Digital Art</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Charcoal drawing of forest scene" width="400" height="300">
+                    <figcaption>"Forest Whispers" - Charcoal</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p>Explore some of my major artistic endeavors and collaborations.</p>
+            
+            <div class="project-cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" alt="Exhibition space with paintings displayed" width="350" height="200">
+                    <div class="card-content">
+                        <h4>Solo Exhibition: "Inner Landscapes"</h4>
+                        <p>A collection of 25 pieces exploring the connection between physical landscapes and emotional states.</p>
+                        <a href="#" class="card-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" alt="Public mural in urban setting" width="350" height="200">
+                    <div class="card-content">
+                        <h4>Public Art: "Community Voices"</h4>
+                        <p>A collaborative mural project created with local community members to celebrate diversity.</p>
+                        <a href="#" class="card-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="video-container">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Artist Process Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h4>Art Process: "From Concept to Canvas"</h4>
+                        <p>A documentary exploring my creative process from initial sketches to final artwork.</p>
+                        <a href="#" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in commissioning a piece or have questions about my work? Reach out!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p><strong>Email:</strong> <a href="mailto:artist@example.com">artist@example.com</a></p>
+                    <p><strong>Studio:</strong> 123 Creative Lane, Art District, City</p>
+                    <p><strong>Hours:</strong> Monday-Friday, 10am-6pm</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sus!4v1652813333264!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h4>Send a Message</h4>
+                    <form action="https://formspree.io/f/your-formspree-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Artist Name</h3>
+                    <p>Creating beauty through art</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Copyright Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Artist Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
