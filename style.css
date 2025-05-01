@@ -339,7 +339,7 @@ a:visited {
 /* Contact Section */
 .contact-content {
     display: flex;
-    gap: 50px;
+    gap: 100px;
     margin-top: 2rem;
 }
 
