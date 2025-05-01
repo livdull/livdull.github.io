@@ -2,9 +2,9 @@
 
 // Print developer info to console
 console.log("Developer Information:");
-console.log("Name: Your Name");
-console.log("GitHub Username: your-github-username");
-console.log("Contact: your-email@example.com");
+console.log("Name: livdull");
+console.log("GitHub Username: livdull");
+console.log("Contact: livrosetull@gmail.com");
 
 // Mobile Navigation Toggle
 const navSlide = () => {
