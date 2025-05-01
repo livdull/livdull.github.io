@@ -109,7 +109,7 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgb(27, 24, 37);
+    background-color: black);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -131,7 +131,7 @@ a:visited {
 }
 
 .nav-links a {
-    color: magenta;
+    color: white;
     font-weight: 500;
     position: relative;
     padding-bottom: 5px;
@@ -144,7 +144,7 @@ a:visited {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #6c5ce7;
+    background-color: black;
     transition: width 0.3s ease;
 }
 
@@ -167,7 +167,7 @@ a:visited {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -180,7 +180,7 @@ a:visited {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://yt3.googleusercontent.com/LD5aGcRPsV8SglUD9foLVDzNmKFQje0u-BKXk0JDwanhFjVSX9hZ94MR9VZWjjS7X4hP7d2VeQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj1920x1080') no-repeat center center/cover;
+    background: black) no-repeat center center/cover;
     text-align: center;
     display: flex;
     align-items: center;
@@ -244,6 +244,9 @@ a:visited {
 }
 
 /* Gallery Section */
+{
+    background-color: black;
+}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -333,7 +336,7 @@ a:visited {
 .card-link {
     display: inline-block;
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* Contact Section */
@@ -516,7 +519,7 @@ a:visited {
         position: absolute;
         right: 0;
         top: 70px;
-        background-color: white;
+        background-color: blue;
         height: calc(100vh - 70px);
         width: 50%;
         flex-direction: column;
