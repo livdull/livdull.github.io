@@ -519,7 +519,7 @@ Media Queries
         position: absolute;
         right: 0;
         top: 70px;
-        background-color: rgb(255, 0, 208);
+        background-color: white(255, 0, 208);
         height: calc(100vh - 70px);
         width: 50%;
         flex-direction: column;
