@@ -266,12 +266,12 @@ a:visited {
 
 .gallery-item {
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-100px);
 }
 
 .gallery-item img {
