@@ -271,7 +271,7 @@ a:visited {
 }
 
 .gallery-item:hover {
-    transform: translateY(-100px);
+    transform: translateY(-10px);
 }
 
 .gallery-item img {
